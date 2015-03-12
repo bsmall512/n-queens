@@ -199,7 +199,7 @@
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
        var size = this.get('n');
-      for (var i = (size * 2) - 1; i >= size; i--){
+      for (var i = (size * 2) - 2; i >= 0; i--){
         if (this.hasMinorDiagonalConflictAt(i)){
           return true;
         }
